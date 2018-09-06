@@ -1,14 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
+// importing builtin modules
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
+import { AppRoutingModule } from './app.routing'; //adding routes from app routing module
+
+// importing components
 import { AppComponent } from './app.component';
+import { FrameworkComponent } from './framework/framework.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FrameworkComponent
+
   ],
   imports: [
-    BrowserModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

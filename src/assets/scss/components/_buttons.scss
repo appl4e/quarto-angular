@@ -1,0 +1,22 @@
+//
+// Button styles
+//
+
+button{
+  text-transform: uppercase;
+}
+
+.btn-light{
+    background-color: $white;
+    border-color: $quarto-yellow;
+    @include hover{
+        border-color: $quarto-yellow;
+    }
+    .icon{
+        margin-right: 10px;
+    }
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active{
+        border-color: $quarto-yellow;
+    }
+}

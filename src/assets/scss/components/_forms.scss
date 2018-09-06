@@ -1,0 +1,107 @@
+//
+// Textual form controls
+//
+.form-control{
+    &::placeholder{
+        color: lighten($input-color, 40%);
+    }
+    &:focus{
+        &::placeholder{
+            color: $input-color;
+        }
+    }
+    &:disabled,
+    &[readonly] {
+        opacity: 1;
+        border-color: $input-disabled-border-color;
+    }
+}    
+
+
+// Checkboxes
+.form-check{
+    .form-check-input{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        position: absolute;
+        margin: 0;
+        z-index: -1;
+        left: 0;
+        pointer-events: none;
+    }
+    .form-check-label{
+        padding-left: 30px;
+        position: relative;
+        line-height: 20px;
+        .check{
+            width: 20px;
+            height: 20px;
+            border: $border-width solid $quarto-yellow;
+            overflow: hidden;
+            z-index: 1;
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            transition-duration: 0.2s;
+            &:before{
+                position: absolute;
+                content: "";
+                transform: rotate(45deg);
+                display: block;
+                margin-top: -3px;
+                margin-left: 7px;
+                width: 0;
+                color: $white;
+                height: 0;
+                box-shadow: 0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0 inset;
+                -webkit-animation: checkbox-off .3s forwards;
+                -moz-animation: checkbox-off .3s forwards;
+                -o-animation: checkbox-off .3s forwards;
+                -ms-animation: checkbox-off .3s forwards;
+                animation: checkbox-off .3s forwards;
+            }
+        }
+    }
+    .form-check-input:checked{
+        &+ .form-check-label{
+            .check{
+                background: $white;
+                transition-duration: 0.2s;
+                &:before{
+                    color: $quarto-yellow;
+                    box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px -12px 0 11px;
+                    -webkit-animation: checkbox-on .3s forwards;
+                    -moz-animation: checkbox-on .3s forwards;
+                    -o-animation: checkbox-on .3s forwards;
+                    -ms-animation: checkbox-on .3s forwards;
+                    animation: checkbox-on .3s forwards;
+                }
+            }
+        }
+    }
+}
+
+@keyframes checkbox-on{
+    0% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,15px 2px 0 11px;
+    }
+    50% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px 2px 0 11px;
+    }
+    100% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px -12px 0 11px;
+    }
+}
+@keyframes checkbox-off{
+    0% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,15px 2px 0 11px;
+    }
+    50% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px 2px 0 11px;
+    }
+    100% {
+        box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px -12px 0 11px;
+    }
+}

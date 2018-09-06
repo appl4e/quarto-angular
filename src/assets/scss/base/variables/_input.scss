@@ -1,5 +1,15 @@
 // Overriding Input variables of bootstrap
 
-$input-btn-padding-y: 0.625rem;
-$input-btn-padding-x:  0.9375rem;
-$input-btn-line-height: 1;
+$input-btn-padding-y    :   0.625rem;
+$input-btn-padding-x    :   0.9375rem;
+$input-btn-line-height  :   1;
+$input-btn-focus-width  :   0rem !default;
+
+$input-border-color     :    $quarto-yellow;
+
+$input-focus-border-color       :  $quarto-yellow;
+
+$input-disabled-bg      :   #F2F2F2;  
+$input-disabled-border-color    :   #BDBDBD;
+
+$form-check-input-gutter        :   0rem;

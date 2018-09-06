@@ -125,7 +125,24 @@
 
     <!-- Select Dropdown -->
     <div class="col-lg-3">
-      
+      <h5 class="mb-3">
+        Dropdown
+      </h5>
+      <div class="form-group row">
+        <label for="select1" class="col-form-label col-md-3">Sort By: </label>
+        <div class="col-md-4">
+          <!-- <select name="" id="" class="form-control">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="mv">Most Viewed</option>
+            <option value="date">Date</option>
+          </select> -->
+          <ng-select [searchable]="false" >
+            <ng-option [value]="true">Yes</ng-option>
+            <ng-option [value]="false">No</ng-option>
+          </ng-select>
+        </div>
+      </div>
     </div>
   </div>
 

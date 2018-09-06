@@ -1,6 +1,8 @@
 // importing builtin modules
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app.routing'; //adding routes from app routing module
 
@@ -16,6 +18,8 @@ import { FrameworkComponent } from './framework/framework.component';
   ],
   imports: [
     RouterModule,
+    NgSelectModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

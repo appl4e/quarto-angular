@@ -16,3 +16,7 @@
         border-color: $input-disabled-border-color;
     }
 }    
+
+select.form-control{
+    padding: calc( #{$input-padding-y} - 0.3rem) $input-padding-x;
+}

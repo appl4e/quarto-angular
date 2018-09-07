@@ -10,11 +10,13 @@ import { AppRoutingModule } from './app.routing'; //adding routes from app routi
 // importing components
 import { AppComponent } from './app.component';
 import { FrameworkComponent } from './framework/framework.component';
+import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FrameworkComponent
+    FrameworkComponent,
+    DashboardLayoutComponent
 
   ],
   imports: [

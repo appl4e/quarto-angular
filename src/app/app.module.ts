@@ -1,6 +1,7 @@
 // importing builtin modules
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 
@@ -18,6 +19,7 @@ import { FrameworkComponent } from './framework/framework.component';
   ],
   imports: [
     RouterModule,
+    CommonModule,
     NgSelectModule,
     FormsModule,
     AppRoutingModule

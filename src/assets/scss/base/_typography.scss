@@ -5,6 +5,7 @@
  =========================================================
 
  */
+
 html {
   line-height: 1.15; // 3
   -webkit-text-size-adjust: 100%; // 4
@@ -24,8 +25,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 label{
-    text-transform: uppercase;
     span.required{
         color: $danger;
     }
+}
+
+.font-weight-medium{
+    font-weight: $headings-font-weight;
+}
+
+.post-meta{
+    font-size: $font-size-base * 0.8125;
+}
+
+.post-meta-md{
+    font-size: $font-size-base * 0.75;
+}
+
+.post-meta-sm{
+    font-size: $font-size-base * 0.6875;
 }

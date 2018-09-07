@@ -4,6 +4,16 @@ Typography Variables
 
 
 // Fonts
+:root{
+   font-size: 16px;
+}
+
 $font-family-oswald : Oswald, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base   : $font-family-oswald;
-$font-size-base     : 0.6875rem !default;
+$font-size-base     : 0.875rem !default;
+
+$h1-font-size       : $font-size-base * 1.375;
+$h2-font-size       : $font-size-base * 1.25;
+$h3-font-size       : $font-size-base * 1.125;
+$h4-font-size       : $font-size-base * 0.9375;
+$h5-font-size       : $font-size-base * 0.875;

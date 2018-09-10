@@ -6,6 +6,13 @@ button{
   text-transform: uppercase;
 }
 
+.btn-primary{
+    color: $secondary;
+    @include hover{
+        color: $secondary;
+    }   
+}
+
 .btn-light{
     background-color: $white;
     border-color: $quarto-yellow;

@@ -18,7 +18,7 @@
         .check{
             width: 20px;
             height: 20px;
-            border: $border-width solid $quarto-yellow;
+            border: $border-width solid $primary;
             overflow: hidden;
             z-index: 1;
             display: inline-block;
@@ -47,10 +47,10 @@
     .form-check-input:checked{
         &+ .form-check-label{
             .check{
-                background: $white;
+                background: $secondary;
                 transition-duration: 0.2s;
                 &:before{
-                    color: $quarto-yellow;
+                    color: $primary;
                     box-shadow: 0 0 0 10px,10px -10px 0 10px,32px 0 0 20px,0 32px 0 20px,-5px 5px 0 10px,20px -12px 0 11px;
                     -webkit-animation: checkbox-on .3s forwards;
                     -moz-animation: checkbox-on .3s forwards;

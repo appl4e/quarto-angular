@@ -10,11 +10,11 @@
         height: $input-height;
         min-height: $input-height;
         border-radius: $border-radius;
-        border: $border-width solid $quarto-yellow;
+        border: $border-width solid $primary;
     }
     &.ng-select-opened{
         &> .ng-select-container{
-            border-color: $quarto-yellow;
+            border-color: $primary;
         }
     }
     &.ng-select-focused:not(.ng-select-opened){
@@ -24,9 +24,9 @@
         }
     }
     .ng-dropdown-panel{
-        border: $border-width solid $quarto-yellow;
+        border: $border-width solid $primary;
         .ng-select-bottom{
-            border-top-color: $quarto-yellow;
+            border-top-color: $primary;
         }
         .ng-dropdown-panel-items{
             .ng-option{

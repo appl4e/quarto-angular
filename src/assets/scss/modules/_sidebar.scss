@@ -4,7 +4,6 @@
 $sidebar-width: 60px;
 $sidebar-icon-font-size: 1.875rem;
 
-$secondary-background-color: #4A4A4A;
 .sidebar{
     
     .sidebar-toggle{
@@ -27,7 +26,7 @@ $secondary-background-color: #4A4A4A;
     .sidebar-nav{
         width: $sidebar-width;
         height: calc(100vh - #{$sidebar-width});
-        background: $secondary-background-color; 
+        background: $tundora; 
         ul{
             li{
                 display: block;

@@ -5,7 +5,7 @@
             height: 20px;
             width: 20px;
             border-radius: 100%;
-            border: $border-width solid $quarto-yellow;
+            border: $border-width solid $primary;
             display: inline-block;
             position: absolute;
             left: 0px;
@@ -14,7 +14,7 @@
                 display: block;
                 position: absolute;
                 content: "";
-                background-color: $quarto-yellow;
+                background-color: $primary;
                 height: 15px;
                 width: 15px;
                 border-radius: 100%;

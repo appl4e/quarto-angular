@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { DashboardLayoutRoutes } from './dashboard-layout.routing';
 import { HomeComponent } from '../home/home.component';
 
+import { NgSelectModule } from '@ng-select/ng-select';
 import { OwlModule } from '../../../../node_modules/ngx-owl-carousel';
 
 
@@ -15,6 +16,7 @@ import { OwlModule } from '../../../../node_modules/ngx-owl-carousel';
     CommonModule,
     RouterModule.forChild(DashboardLayoutRoutes),
     FormsModule,
+    NgSelectModule,
     OwlModule
   ],
   declarations: [

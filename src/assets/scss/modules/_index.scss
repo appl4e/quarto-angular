@@ -1,10 +1,12 @@
 /*!
 
- =========================================================
- * Connecting all Module style files
- =========================================================
+    =========================================================
+    * Connecting all Module style files
+    =========================================================
 
- */
- @import "sidebar";
- @import "header";
- @import "footer";
+*/
+@import "sidebar";
+@import "main";
+@import "header";
+@import "video-slider";
+@import "footer";

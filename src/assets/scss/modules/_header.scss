@@ -1,0 +1,32 @@
+// navbar
+
+
+.user-circle{
+    @include circle($header-user-pic-width, $primary);
+    span{
+        color: $white;
+        line-height: 1;
+        display: inline-block;
+    }
+    
+
+}
+
+.header{
+    width: calc( 100% - #{$sidebar-width});
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-bottom: $border-width solid $extraLight;
+    z-index: z('header');
+    .navbar-nav{
+        .nav-link{
+            &:hover{
+                text-decoration: none;
+            }
+            .icon{
+                font-size: $h2-font-size;
+            }
+        }
+    }
+}

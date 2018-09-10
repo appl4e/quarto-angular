@@ -5,11 +5,11 @@ $input-btn-padding-x            :   0.9375rem;
 $input-btn-line-height          :   1;
 $input-btn-focus-width          :   0rem !default;
 
-$input-color                    :   #444444;
-$input-border-color             :    $primary;
-$input-focus-border-color       :    $secondary;
+$input-color                    :   $black;
+$input-border-color             :   $primary;
+$input-focus-border-color       :   $secondary;
 
-$input-disabled-bg              :   #F2F2F2;  
-$input-disabled-border-color    :   #BDBDBD;
+$input-disabled-bg              :   $extraLight;  
+$input-disabled-border-color    :   $silver;
 
 $form-check-input-gutter        :     0rem;

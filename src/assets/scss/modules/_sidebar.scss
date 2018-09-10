@@ -1,11 +1,15 @@
 //
 //Sidebar
 //
-$sidebar-width: 60px;
-$sidebar-icon-font-size: 1.875rem;
 
 .sidebar{
-    
+    float: left;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: z("sidebar");
+
     .sidebar-toggle{
         width: $sidebar-width;
         height: $sidebar-width;
@@ -16,8 +20,11 @@ $sidebar-icon-font-size: 1.875rem;
             height: 100%;
             width: 100%;
             color: black; 
-            padding-left: 15px;           
-            i{
+            padding-left: 15px;  
+            &:hover{
+                text-decoration: none;
+            }         
+            .icon{
                 line-height: 1;
                 vertical-align: middle;
             }

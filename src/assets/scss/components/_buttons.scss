@@ -2,8 +2,9 @@
 // Button styles
 //
 
-button{
+.btn{
   text-transform: uppercase;
+  font-size: $font-size-base;
 }
 
 .btn-primary{

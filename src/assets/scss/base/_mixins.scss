@@ -1,0 +1,21 @@
+@mixin circle($width,$bg){    
+    width: $width;
+    height: $width;
+    background-color: $bg;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;    
+    padding: 0rem;
+    line-height: $header-user-pic-width;
+}
+
+// function for z-index
+
+@function z($layer){
+    @if not map-has-key($z-layers, $layer){
+        @warn "No Layer found for '#{$layer}' in $z-layers map. Property omitted.";
+    }
+    
+    @return map-get($z-layers, $layer);
+}

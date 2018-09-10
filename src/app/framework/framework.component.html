@@ -152,12 +152,6 @@
       <div class="form-group row">
         <label for="select1" class="col-form-label col-md-3">Sort By: </label>
         <div class="col-md-4">
-          <!-- <select name="" id="" class="form-control">
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="mv">Most Viewed</option>
-            <option value="date">Date</option>
-          </select> -->
           <ng-select [searchable]="false" [(ngModel)]="selectedSort">
             <ng-option *ngFor="let sort of sorts" [value]="sort.id">{{sort.name}}</ng-option>
           </ng-select>

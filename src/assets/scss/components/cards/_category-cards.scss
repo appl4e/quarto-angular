@@ -1,0 +1,57 @@
+.category-card{
+    border: 1px solid $extraLight;
+    position: relative;
+    .card-bookmark-sign{
+        @include circle(33.5px, $secondary);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        i{
+            font-size: 20px;
+            color: white;
+            line-height: 33.5px;
+        }
+        &.bookmarked{
+            background-color: $info;
+        }
+    }
+        
+}
+.category-stats{
+    overflow: hidden;
+    position: relative;
+    .category-stat_item{
+        display: inline-block;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid $secondary;
+        &:last-child{
+            border-right: 0px;
+            margin-right: 0px;
+        }
+    }
+    .category-stat_users{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: auto;
+        ul{
+            margin-bottom: 0px;
+            li{
+                float: right;
+                overflow: hidden;
+                margin-right: -5px;
+                &:first-child{
+                    margin-right: 0px;
+                }
+                img{
+                    @include circle(25px, $secondary);
+                    border: 1px solid $secondary;
+                }
+            }
+        }
+        
+    }
+}

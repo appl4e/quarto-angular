@@ -12,19 +12,21 @@ import { AppComponent } from './app.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
+import { OwlModule } from '../../node_modules/ngx-owl-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
     FrameworkComponent,
     DashboardLayoutComponent
-
   ],
   imports: [
     RouterModule,
     CommonModule,
     NgSelectModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,8 @@ import { DashboardLayoutRoutes } from './dashboard-layout.routing';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { OwlModule } from '../../../../node_modules/ngx-owl-carousel';
-import { HomeComponent } from '../../components/home/home.component';
+import { ComponentsModule } from '../../components/components.module';
+
 
 
 
@@ -18,10 +19,11 @@ import { HomeComponent } from '../../components/home/home.component';
     RouterModule.forChild(DashboardLayoutRoutes),
     FormsModule,
     NgSelectModule,
-    OwlModule
+    OwlModule,
+    ComponentsModule
   ],
   declarations: [
-    HomeComponent
+    
   ]
 })
 export class DashboardLayoutModule { }

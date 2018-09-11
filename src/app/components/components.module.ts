@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+// Components of this module
 import { HomeComponent } from './home/home.component';
 
 import { NgSelectModule } from '@ng-select/ng-select';

@@ -23,10 +23,9 @@
             padding-left: 15px;  
             &:hover{
                 text-decoration: none;
-            }         
-            .icon{
-                line-height: 1;
-                vertical-align: middle;
+            }
+            i{
+                line-height: $sidebar-width;
             }
         }
     }
@@ -45,6 +44,9 @@
                     padding-left: 15px;
                     text-align: left;
                     color: white;
+                    &:hover{
+                        text-decoration: none;
+                    }
                 }
             }
         }

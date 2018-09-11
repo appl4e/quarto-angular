@@ -7,7 +7,8 @@ import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-la
 const routes: Routes = [
   {
     path: 'framework',
-    component: FrameworkComponent
+    component: FrameworkComponent,
+    data: {title: "Framework"}
   },
   {
     path: '',

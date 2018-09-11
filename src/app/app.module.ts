@@ -15,6 +15,7 @@ import { FrameworkComponent } from './framework/framework.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
 import { LayoutModule } from './layout/layout.module';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 
 
@@ -33,6 +34,7 @@ import { LayoutModule } from './layout/layout.module';
     OwlModule,
     AppRoutingModule,
     LayoutModule,
+    AuthenticationModule,
     
   ],
   providers: [],

@@ -27,7 +27,7 @@
         padding-right: 10px;
         margin-right: 10px;
         border-right: 1px solid $secondary;
-        &:last-child{
+        &:nth-child(3){
             border-right: 0px;
             margin-right: 0px;
         }

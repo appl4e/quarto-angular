@@ -21,11 +21,9 @@
     }
     .sorting-on-title{
         width: 200px;
-        overflow: hidden;
         float: right;
         label{
             float: right;
-            overflow: hidden;
             margin-right: 10px;
             margin-bottom: 0px;
             vertical-align: middle;
@@ -33,7 +31,6 @@
         }
         .select-container{
             float: right;
-            overflow: hidden;
             min-width: 80px;
             vertical-align: middle;
         }

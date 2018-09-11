@@ -12,8 +12,6 @@ import { AppComponent } from './app.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
-import { HomeComponent } from "./layout/home/home.component";
-
 import { OwlModule } from '../../node_modules/ngx-owl-carousel';
 import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';

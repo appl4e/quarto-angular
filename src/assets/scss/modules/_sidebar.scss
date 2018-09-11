@@ -32,7 +32,7 @@
     .sidebar-nav{
         width: $sidebar-width;
         height: calc(100vh - #{$sidebar-width});
-        background: $tundora; 
+        background: $primary; 
         ul{
             li{
                 display: block;

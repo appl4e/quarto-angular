@@ -15,11 +15,6 @@ const routes: Routes = [
     data: {title: 'Quarto | Home'}
   },
   {
-    path: 'home',
-    redirectTo: '',
-    pathMatch: 'full'
-  },
-  {
     path: 'Login',
     component: LoginComponent,
     data: {title: "Login"}

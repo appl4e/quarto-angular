@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     console.log(this.loginForm.value);
-    this.Router.navigateByUrl('/home');
+    this.Router.navigateByUrl('/dashboard');
   }
 
   ngOnInit() {

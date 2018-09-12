@@ -5,9 +5,15 @@ $input-btn-padding-x            :   0.9375rem;
 $input-btn-line-height          :   1;
 $input-btn-focus-width          :   0rem !default;
 
-$input-color                    :   $black;
+$input-bg                       :   $white;
+$input-color                    :   $primary;
 $input-border-color             :   $primary;
 $input-focus-border-color       :   $secondary;
+
+$input-inverted-bg              :   $input-color;
+$input-inverted-color           :   $input-bg;
+$input-inverted-border-color    :   $input-bg;
+
 
 $input-disabled-bg              :   $extraLight;  
 $input-disabled-border-color    :   $silver;

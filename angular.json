@@ -36,7 +36,11 @@
               
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./node_modules/bootstrap/scss"]
+              "includePaths": [
+                "src/app/assets/scss",
+                "./node_modules/bootstrap/scss"
+                
+              ]
             },
             "scripts": [
               "./node_modules/jquery/jquery.min.js",

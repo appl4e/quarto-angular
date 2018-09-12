@@ -43,6 +43,15 @@
                 animation: checkbox-off .3s forwards;
             }
         }
+        &.inverted-color{
+            .check{
+                border: $border-width solid $input-inverted-border-color;
+                background: $input-inverted-bg;
+                &:before{
+                    color: $input-inverted-bg;
+                }
+            }
+        }
     }
     .form-check-input:checked{
         &+ .form-check-label{

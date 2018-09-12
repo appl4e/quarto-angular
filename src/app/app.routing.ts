@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { FrameworkComponent } from './framework/framework.component';
-import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
-import { LoginComponent } from './authentication/login/login.component';
+import { DashboardLayoutComponent } from './layout';
+import { LoginComponent } from './authentication';
 
 const routes: Routes = [
   {

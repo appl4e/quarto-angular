@@ -15,6 +15,11 @@
         opacity: 1;
         border-color: $input-disabled-border-color;
     }
+    &.inverted-color{
+        color: $input-inverted-color;
+        background-color: $input-inverted-bg;
+        border: $input-border-width solid $input-inverted-border-color;
+    }
 }    
 
 select.form-control{

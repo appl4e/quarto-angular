@@ -12,6 +12,11 @@ const routes: Routes = [
     data: {title: "Framework"}
   },
   {
+    path: 'home',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
+  {
     path: 'Login',
     component: LoginComponent,
     data: {title: "Login"}

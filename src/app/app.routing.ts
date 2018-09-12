@@ -4,12 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { FrameworkComponent } from './framework/framework.component';
 import { DashboardLayoutComponent } from './layout';
 import { LoginComponent } from './authentication';
+import { HomepageComponent } from '@app/website';
+
+
 
 const routes: Routes = [
   {
-    path: 'framework',
-    component: FrameworkComponent,
-    data: {title: "Framework"}
+    path: '',
+    component: HomepageComponent,
+    data: {title: 'Quarto | Home'}
   },
   {
     path: 'home',
@@ -22,7 +25,12 @@ const routes: Routes = [
     data: {title: "Login"}
   },
   {
-    path: '',
+    path: 'framework',
+    component: FrameworkComponent,
+    data: { title: "Framework" }
+  },
+  {
+    path: 'dashboard',
     component: DashboardLayoutComponent,
     children: [
       {

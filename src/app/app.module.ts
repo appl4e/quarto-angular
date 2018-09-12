@@ -16,6 +16,8 @@ import { DashboardLayoutComponent } from './layout';
 
 import { LayoutModule } from './layout';
 import { AuthenticationModule } from './authentication';
+import { WebsiteModule } from '@app/website';
+
 
 
 
@@ -35,7 +37,7 @@ import { AuthenticationModule } from './authentication';
     AppRoutingModule,
     LayoutModule,
     AuthenticationModule,
-    
+    WebsiteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,14 @@ import { ExploreCategoryService } from '@app/services/home/explore-category/expl
 })
 export class ExploreCategoryComponent implements OnInit {
 
+  ExploreCatSort = 1;
+  sorts = [
+    { id: 1, name: 'A-Z' },
+    { id: 2, name: 'Z-A' },
+    { id: 3, name: 'Most Viewed' },
+    { id: 4, name: 'Date' }
+  ];
+
   public explore_cats = [];
 
   constructor(private exploreCategoryService: ExploreCategoryService) { }

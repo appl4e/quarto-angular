@@ -1,0 +1,58 @@
+<section class="videos-section">
+  <div class="section-title mb-4">
+    <h1>Videos</h1>
+    <button class="btn btn-secondary float-right ml-2" type="button">View All Videos</button>
+    <div class="sorting-on-title form-group d-inline-block">
+      <div class="select-container">
+        <ng-select [searchable]="false" [(ngModel)]="videoSorts">
+          <ng-option *ngFor="let vidSort of vidSorts" [value]="vidSort.id">{{vidSort.name}}</ng-option>
+        </ng-select>
+      </div>
+      <label for="select1" class="">Sort By: </label>
+    </div>
+  </div>
+  <div class="section-content">
+    <owl-carousel [options]="{items: 4, dots: false, margin: 15, navigation: false}">
+      <div class="item">
+        <div class="card">
+          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h3>Foundational Principles preview</h3>
+            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h3>Foundational Principles preview</h3>
+            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h3>Foundational Principles preview</h3>
+            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h3>Foundational Principles preview</h3>
+            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
+          </div>
+        </div>
+      </div>
+    </owl-carousel>
+
+    <div class="col-12 text-center mt-4">
+      <button class="btn btn-secondary">Load More Videos</button>
+    </div>
+  </div>
+</section>

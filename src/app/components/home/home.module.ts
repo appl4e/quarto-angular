@@ -6,6 +6,8 @@ import { HomeComponent } from './home.component';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { OwlModule } from 'node_modules/ngx-owl-carousel';
+import { ExploreCategoryComponent } from './explore-category/explore-category.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { OwlModule } from 'node_modules/ngx-owl-carousel';
     OwlModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    ExploreCategoryComponent,
+    VideosComponent
   ],
   exports: [
     HomeComponent

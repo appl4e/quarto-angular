@@ -5,6 +5,7 @@ import { FrameworkComponent } from './framework/framework.component';
 import { DashboardLayoutComponent } from './layout';
 import { LoginComponent } from './authentication';
 import { HomepageComponent } from '@app/website';
+import { SignupComponent } from '@app/authentication/signup/signup.component';
 
 
 
@@ -17,7 +18,12 @@ const routes: Routes = [
   {
     path: 'Login',
     component: LoginComponent,
-    data: {title: "Login"}
+    data: {title: "Log In"}
+  },
+  {
+    path: 'Signup',
+    component: SignupComponent,
+    data: {title: "Sign Up"}
   },
   {
     path: 'framework',

@@ -1,0 +1,15 @@
+@import 'base/variables';
+.login-logo{
+    width: 200px;
+    padding: 3.4375rem 2.1875rem;
+    max-height: 9.075rem;
+    background: $black-700;
+}
+
+.login-quote{
+    .blockquote{
+        p{
+            letter-spacing: 1px;
+        }
+    }
+}

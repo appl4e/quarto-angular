@@ -12,27 +12,27 @@
     </div>
   </div>
   <div class="section-content row mt-4">
-    <div class="col-lg-3 mb-4">
+    <div class="col-lg-3 mb-4" *ngFor="let exploreCat of explore_cats">
       <div class="card category-card">
         <div class="card-body">
           <h4 class="card-title mb-4 text-uppercase">
-            Operations
+            {{exploreCat.title}}
           </h4>
           <div class="category-stats">
             <div class="category-stat_item">
-              <h5>500</h5>
+              <h5>{{exploreCat.articles}}</h5>
               <h5 class="font-weight-light text-uppercase mb-0">
                 Article
               </h5>
             </div>
             <div class="category-stat_item">
-              <h5>10</h5>
+              <h5>{{exploreCat.videos}}</h5>
               <h5 class="font-weight-light text-uppercase mb-0">
                 Videos
               </h5>
             </div>
             <div class="category-stat_item">
-              <h5>209</h5>
+              <h5>{{exploreCat.viewed}}</h5>
               <h5 class="font-weight-light text-uppercase mb-0">
                 Viewed
               </h5>
@@ -41,387 +41,19 @@
             <div class="category-stat_users">
               <ul class="list-unstyled list-inline">
                 <li>
-                  <img src="./assets/img/user3.png" alt="">
+                  <img [src]="exploreCat.users[0]" alt="">
                 </li>
                 <li>
-                  <img src="./assets/img/user1.png" alt="">
+                  <img [src]="exploreCat.users[1]" alt="">
                 </li>
                 <li>
-                  <img src="./assets/img/user2.png" alt="">
+                  <img [src]="exploreCat.users[2]" alt="">
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="card-bookmark-sign bookmarked">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign bookmarked">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign bookmarked">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
-          <i class="icon-shield"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 mb-4">
-      <div class="card category-card">
-        <div class="card-body">
-          <h4 class="card-title mb-4 text-uppercase">
-            Operations
-          </h4>
-          <div class="category-stats">
-            <div class="category-stat_item">
-              <h5>500</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Article
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>10</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Videos
-              </h5>
-            </div>
-            <div class="category-stat_item">
-              <h5>209</h5>
-              <h5 class="font-weight-light text-uppercase mb-0">
-                Viewed
-              </h5>
-            </div>
-
-            <div class="category-stat_users">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <img src="./assets/img/user3.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user1.png" alt="">
-                </li>
-                <li>
-                  <img src="./assets/img/user2.png" alt="">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card-bookmark-sign">
+        <div class="card-bookmark-sign bookmarked" [ngClass]="{bookmarked: exploreCat.bookmarked}" >
           <i class="icon-shield"></i>
         </div>
       </div>

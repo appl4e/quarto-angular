@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideosService } from '@app/services/home/videos/videos.service';
 
 @Component({
   selector: 'quarto-videos',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideosComponent implements OnInit {
 
-  constructor() { }
+  public videos = [];
+  constructor(private videosService: VideosService) { }
 
   ngOnInit() {
+    this.videos = this.videosService.getVideos();
   }
 
 }

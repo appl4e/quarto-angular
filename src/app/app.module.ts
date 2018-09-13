@@ -39,7 +39,8 @@ import { WebsiteModule } from '@app/website';
     AuthenticationModule,
     WebsiteModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

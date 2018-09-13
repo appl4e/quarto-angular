@@ -13,39 +13,12 @@
   </div>
   <div class="section-content">
     <owl-carousel [options]="{items: 4, dots: false, margin: 15, navigation: false}">
-      <div class="item">
+      <div class="item" *ngFor="let video of videos" >
         <div class="card">
-          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
+          <img [src]="video.thumb" alt="" class="card-img-top">
           <div class="card-body">
-            <h3>Foundational Principles preview</h3>
-            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="card">
-          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
-          <div class="card-body">
-            <h3>Foundational Principles preview</h3>
-            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="card">
-          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
-          <div class="card-body">
-            <h3>Foundational Principles preview</h3>
-            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="card">
-          <img src="./assets/img/video-thumb.jpg" alt="" class="card-img-top">
-          <div class="card-body">
-            <h3>Foundational Principles preview</h3>
-            <p class="font-weight-light post-meta text-black-50 mb-0">86K views - 1 Year ago</p>
+            <h3>{{video.title}}</h3>
+            <p class="font-weight-light post-meta text-black-50 mb-0">{{video.views}} views - {{video.year}} Year ago</p>
           </div>
         </div>
       </div>

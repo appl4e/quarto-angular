@@ -1,8 +1,8 @@
 import { Routes } from "@angular/router";
-import { HomeComponent } from "@app/components";
+import { ComponentsComponent } from "@app/components";
 
 
 
 export const DashboardLayoutRoutes: Routes = [
-    { path: '', component: HomeComponent, data: {title: 'Home'} }
+    { path: '', component: ComponentsComponent, loadChildren: '@app/components/components.module#ComponentsModule' }
 ];

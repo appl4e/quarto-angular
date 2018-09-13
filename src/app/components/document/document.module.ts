@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CreateComponent } from './create/create.component';
+import { RouterModule } from '@angular/router';
+import { CreateDocument } from './create-document/create-document.component';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  declarations: [CreateComponent]
+  declarations: [CreateDocument]
 })
 export class DocumentModule { }

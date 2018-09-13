@@ -6,6 +6,7 @@ import { DashboardLayoutComponent } from './layout';
 import { LoginComponent } from './authentication';
 import { HomepageComponent } from '@app/website';
 import { SignupComponent } from '@app/authentication/signup/signup.component';
+import { ForgotPassComponent } from '@app/authentication/forgot-pass/forgot-pass.component';
 
 
 
@@ -24,6 +25,11 @@ const routes: Routes = [
     path: 'Signup',
     component: SignupComponent,
     data: {title: "Sign Up"}
+  },
+  {
+    path: 'ForgotPassword',
+    component: ForgotPassComponent,
+    data: {title: "Forgot Password"}
   },
   {
     path: 'framework',

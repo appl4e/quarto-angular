@@ -1,0 +1,46 @@
+<div class="container-fluid login-container">
+  <div class="row fullHeight-wrapper">
+    <div class="col-lg-3 bg-secondary pr-0">
+      <div class="mt-5 position-relative justify-content-end d-flex">
+        <div class="mt-5 login-logo">
+          <a href="" routerLink="/">
+            <object data="src/assets/img/logo-secondary.svg" type="image/svg+xml" class="login-logo_object">
+              Object does not work in this browser.
+            </object>
+          </a>
+        </div>
+      </div>
+
+      <div class="login-quote mt-5 px-5 py-3">
+        <blockquote class="blockquote">
+          <p class="display-4 font-weight-medium">
+            The good life is one inspired by love and guided by knowledge.
+          </p>
+          <footer class="blockquote-footer text-right text-primary h5 mt-5">
+            Bertrand Russell
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="col-lg-9 bg-primary">
+      <div class="row justify-content-center h-100">
+        <div class="col-lg-4 text-white align-self-center">
+          <h1 class="mb-4 display-3 font-weight-medium text-secondary">Forgot Your Password?</h1>
+          <form action="" [formGroup]="forgotForm" (ngSubmit)="onSubmit()" class="font-weight-light">
+            <div class="from-group">
+              <label for="name" class="">Email Address <span class="required">*</span></label>
+              <input type="text" formControlName="email" class="form-control inverted-color" id="name" placeholder="Type your email address">
+            </div>
+            <div class="form-group mt-4">
+              <button class="btn btn-secondary font-weight-medium" [disabled]="!forgotForm.valid">Reset Password</button>
+            </div>
+            <div class="mt-4">
+              <a routerLink="/" class="text-white ">Back To Home</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

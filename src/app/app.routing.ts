@@ -37,7 +37,7 @@ const routes: Routes = [
     data: { title: "Framework" }
   },
   {
-    path: 'dashboard',
+    path: 'home',
     component: DashboardLayoutComponent,
     children: [
       {
@@ -45,7 +45,7 @@ const routes: Routes = [
         loadChildren: './layout/dashboard-layout/dashboard-layout.module#DashboardLayoutModule'
       }
     ]
-  }  
+  } 
 ];
 
 @NgModule({

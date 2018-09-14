@@ -18,7 +18,7 @@
             bottom: calc(-0.8rem - 1px);
             left: 0px;
         }
-    }
+    }    
     .sorting-on-title{
         width: 200px;
         float: right;
@@ -35,4 +35,18 @@
             vertical-align: middle;
         }
     }
+    .icon{
+        float: right;
+        &:before{
+            line-height: $headings-line-height;
+            vertical-align: sub;
+            color: $secondary;
+            font-size: $h4-font-size;
+        }
+        
+    }
+}
+.section-title_2{
+    @extend .section-title;
+    padding-bottom: 0rem;
 }

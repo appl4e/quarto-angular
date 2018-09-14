@@ -36,5 +36,5 @@
         margin-top: -0.25rem;
     }
     line-height: 1.25rem;
-    padding: calc(#{$input-btn-padding-y}/1.4285) $input-btn-padding-x;
+    padding: calc((#{$input-btn-padding-y}/1.4285) - (#{$border-width}*2)) $input-btn-padding-x;
 }

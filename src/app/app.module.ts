@@ -17,7 +17,7 @@ import { DashboardLayoutComponent } from './layout';
 import { LayoutModule } from './layout';
 import { AuthenticationModule } from './authentication';
 import { WebsiteModule } from '@app/website';
-
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 
 
@@ -37,7 +37,9 @@ import { WebsiteModule } from '@app/website';
     AppRoutingModule,
     LayoutModule,
     AuthenticationModule,
-    WebsiteModule
+    WebsiteModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot()
   ],
   providers: [
   ],

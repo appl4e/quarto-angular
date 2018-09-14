@@ -9,6 +9,11 @@ export class CreateDocument implements OnInit {
 
   constructor() { }
 
+  public options: Object ={
+    charCounterCout: true,
+    heightMin:  500,
+    pluginsEnabled: ['image', 'video', 'table', 'list']
+  }
   ngOnInit() {
   }
 

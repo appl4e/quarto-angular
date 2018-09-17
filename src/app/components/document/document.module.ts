@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { CreateDocument } from './create-document/create-document.component';
 import {FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     FormsModule,
+    ReactiveFormsModule,
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot(),
     

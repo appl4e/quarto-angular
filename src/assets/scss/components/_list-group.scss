@@ -52,7 +52,7 @@
             background-color: $silver;
             position: absolute;
             top: 55%;
-            left: -10px;
+            left: -15px;
             -webkit-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
             z-index: 2;
@@ -63,7 +63,7 @@
             height: 100%;
             background-color: $extraLight;
             position: absolute;
-            left: -10px;
+            left: -15px;
             z-index: 1;
         }
         &:first-child{

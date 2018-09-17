@@ -76,6 +76,12 @@ export class CreateDocument implements OnInit {
     this.percentageComplete = Math.round((comp / total) * 100);
   }
 
+  deleteSection(i){
+    this.sections = this.sections.filter(obj => obj != i);
+    
+    return false;
+  }
+
   public options: Object ={
     charCounterCout: true,
     heightMin:  500,

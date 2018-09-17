@@ -23,7 +23,7 @@
 
       <div class="form-group">
         <label for="docTitle">Document Title</label>
-        <input type="text" formControlName="docTitle" class="form-control" id="docTitle" placeholder="Get Rid Of Your Generic “About” Designer Statement">
+        <input type="text" class="form-control" id="docTitle" placeholder="Get Rid Of Your Generic “About” Designer Statement">
       </div>
 
       <div class="section-title mt-4 mb-2">
@@ -33,11 +33,11 @@
       <form action="">
         <div class="form-group">
           <label for="sectionTitle">Document Section Title</label>
-          <input type="text" formControlName="sectionTitle" class="form-control" id="sectionTitle" placeholder="Type your section title here">
+          <input type="text" class="form-control" id="sectionTitle" [(ngModel)]="sectionTitle" [ngModelOptions]="{standalone: true}"  placeholder="Type your section title here">
         </div>
         <div class="form-group">
           <label for="sectionDesc" >Document Section Description</label>
-          <textarea [froalaEditor]="options" ></textarea>
+          <textarea [froalaEditor]="options" [(ngModel)]="sectionDescription" [ngModelOptions]="{standalone: true}"></textarea>
         </div>
         <div class="form-group">
           <button class="btn btn-secondary">Done Editing Section</button>
@@ -80,63 +80,15 @@
           
         </div>
         <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list">
-          <li class="list-group-item d-flex align-items-center active">
-            <a href="#" class="mr-auto py-2">Introduction</a>
-            <a href="#" class="ml-2">
+          <li class="list-group-item d-flex align-items-center" *ngFor="let section of sections" (click)="getSectionInfo(section)" [ngClass]="{active: sectionTitle == section.title}">
+            <p class="mr-auto py-2">{{section.title}}</p>
+            <a href="" class="ml-2">
               <i class="icon icon-option"></i>
             </a>
-            <a href="#" class="ml-2">
+            <a href="" class="ml-2">
               <i class="icon icon-edit"></i>
             </a>
-            <a href="#" class="ml-2 text-danger">
-              <i class="icon icon-delete"></i>
-            </a>
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <a href="#" class="mr-auto py-2">Introduction</a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-option"></i>
-            </a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-edit"></i>
-            </a>
-            <a href="#" class="ml-2 text-danger">
-              <i class="icon icon-delete"></i>
-            </a>
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <a href="#" class="mr-auto py-2">Introduction</a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-option"></i>
-            </a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-edit"></i>
-            </a>
-            <a href="#" class="ml-2 text-danger">
-              <i class="icon icon-delete"></i>
-            </a>
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <a href="#" class="mr-auto py-2">Introduction</a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-option"></i>
-            </a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-edit"></i>
-            </a>
-            <a href="#" class="ml-2 text-danger">
-              <i class="icon icon-delete"></i>
-            </a>
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <a href="#" class="mr-auto py-2">Introduction</a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-option"></i>
-            </a>
-            <a href="#" class="ml-2">
-              <i class="icon icon-edit"></i>
-            </a>
-            <a href="#" class="ml-2 text-danger">
+            <a href="" class="ml-2 text-danger">
               <i class="icon icon-delete"></i>
             </a>
           </li>

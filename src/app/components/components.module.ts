@@ -15,7 +15,7 @@ import { ComponentRoutes } from '@app/components/component-routing.module';
     CommonModule,
     RouterModule.forChild(ComponentRoutes),
     HomeModule,
-    DocumentModule,
+    DocumentModule
     
   ],
   declarations: [ComponentsComponent],

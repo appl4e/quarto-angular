@@ -1,6 +1,12 @@
 // 
 // List groups
 // 
+
+.list-group-item{
+    &.active{
+        color: $primary;
+    }
+}
 .list-group-icons{
     li{
         padding: rem(5px) rem(0px);
@@ -12,7 +18,10 @@
                     top: 0px;
                 }
             }
-        }  
+        } 
+        p{
+            margin-bottom: 0px;
+        } 
         a{
             .icon{
                 font-size: 1.375rem;
@@ -25,11 +34,13 @@
         }
     }
 }
+
 .section-list{
     li{
         width: calc(100% - 20px);
         margin-left: 20px;
         position: relative;
+        cursor: pointer;
         a{
             color: $silver;
         }

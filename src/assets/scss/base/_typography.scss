@@ -34,6 +34,21 @@ label{
     }
 }
 
+/* 
+// Text Colors
+*/
+.text-silver{
+    color: $silver;
+}
+
+.text-highlight{
+    background-color: $light-secondary;
+    color: $primary;
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+    display: inline-block;
+}
+
 .font-weight-medium{
     font-weight: $headings-font-weight;
 }

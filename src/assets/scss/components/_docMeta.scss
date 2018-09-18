@@ -1,0 +1,20 @@
+.doc_userImg{
+    border: 1px solid $secondary;
+    margin-right: 1rem;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    img{
+        height: 100%;
+    }
+}
+.doc_section{
+    margin-bottom: 1.5rem;
+}
+.doc_attachment{
+    ul{
+        li{
+            margin-bottom: rem(10px);
+        }
+    }
+}

@@ -7,20 +7,37 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class CreateDocument implements OnInit {
 
-  inputSections = null;
+  public isCollapsed = false;
+  public attchCollapsed = false;
+
+  collapse(){
+    
+    this.isCollapsed = !this.isCollapsed;
+
+    return false;
+  }
+
+  attchCollapse(){
+    this.attchCollapsed = !this.attchCollapsed;
+
+    return false;
+  }
+  // Defining sections array
   sections = [
     { title: 'Introduction', description: '', id: 1, completed: false},
     { title: 'How to start', description: 'Description of How to start', id: 2, completed: false},
     { title: 'Topic Body', description: 'Description of Topic Body', id: 3, completed: false},
     { title: 'Conclusion', description: 'Description of Conclusion', id: 4, completed: false}
   ];
-
+  // Defining variables for section list actions
+  inputSections = null;
   addSectionArray = null;
   selectedSectionId = null;
   sectionCompleted = null;
   percentageComplete = 0;
   allIds = [];
 
+  // Section edit form
   sectionForm = this.fb.group({
     title: ['', Validators.required],
     description: ['', Validators.required],
@@ -30,6 +47,7 @@ export class CreateDocument implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
+  // Getting section info on click on section list item
   getSectionInfo(section){
     this.sectionForm.controls.title.setValue(section.title);
     this.sectionForm.controls.description.setValue(section.description);
@@ -38,6 +56,7 @@ export class CreateDocument implements OnInit {
     return false;
   }
 
+  // Adding new section item on the section list
   addSection() {
     var newId;
     this.sections.filter(obj => {
@@ -54,7 +73,7 @@ export class CreateDocument implements OnInit {
 
     console.log(this.sections);
   }
-
+  // On click submit of section form
   sectionSubmit() {
     var x = this.selectedSectionId;   
     var index = this.sections.findIndex(y=> y.id==x);
@@ -67,7 +86,7 @@ export class CreateDocument implements OnInit {
     this.percentCalculate();
     
   }
-
+  // Calculating the percent completion of section
   percentCalculate(){
     var total = this.sections.length;
     var complete = this.sections.filter(obj => {
@@ -77,18 +96,21 @@ export class CreateDocument implements OnInit {
 
     this.percentageComplete = Math.round((comp / total) * 100);
   }
-
+  // Delete section from section list
   deleteSection(i){
     this.sections = this.sections.filter(obj => obj != i);
     
     return false;
   }
 
+  // Froala Wysiwyg editor initialization options
   public options: Object ={
     charCounterCout: true,
     heightMin:  500,
     pluginsEnabled: ['image', 'video', 'table', 'list']
   }
+
+
   ngOnInit() {
   }
 

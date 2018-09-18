@@ -20,8 +20,6 @@ import { WebsiteModule } from '@app/website';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +37,7 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
     AuthenticationModule,
     WebsiteModule,
     FroalaEditorModule.forRoot(),
-    FroalaViewModule.forRoot()
+    FroalaViewModule.forRoot()    
   ],
   providers: [
   ],

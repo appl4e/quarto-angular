@@ -65,38 +65,43 @@
 
       <!-- widget start -->
       <div class="sidebar-widget">
-        <div class="section-title mt-4 mb-3">
-          <h4 class="text-uppercase form-weight-bold">
-            section of this Document
-            <i class="icon-arrow-top icon"></i>
-          </h4>
-        </div>
-
-        <div class="form-group">
-          <label for="" class="d-block">Completed <span class="float-right">{{percentageComplete}}%</span></label>
-          <div class="progress">
-            <div class="progress-bar bg-secondary" [ngStyle]="{'width': percentageComplete + '%'}"></div>
+        <div class="widget-title">
+          <div class="section-title mt-4 mb-3">
+            <h4 class="text-uppercase form-weight-bold">
+              section of this Document
+              <a href="" (click)="collapse()" aria-controls="docSectionList" [attr.aria-expanded]="!isCollapsed">
+                <i class="icon-arrow-top icon" ></i>
+              </a>
+            </h4>
           </div>
-          
         </div>
-        <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list">
-          <li class="list-group-item d-flex align-items-center" *ngFor="let section of sections; let i of index" (click)="getSectionInfo(section)" [ngClass]="{active: selectedSectionId == section.id}">
-            <p class="mr-auto py-2">{{section.title}}</p>
-            <a href="" class="ml-2">
-              <i class="icon icon-option"></i>
-            </a>
-            <a href="#" (click)="getSectionInfo(section)" class="ml-2">
-              <i class="icon icon-edit"></i>
-            </a>
-            <a href="#" class="ml-2 text-danger" (click)="deleteSection(i)">
-              <i class="icon icon-delete"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="input-group mt-3">
-          <input type="text" placeholder="Add Section" class="form-control" [(ngModel)]="inputSections">
-          <div class="input-group-append">
-            <button class="btn btn-primary btn-with-icon" (click)="addSection()"><i class="icon icon-add"></i></button>
+        <div class="widget-body" id="docSectionList" [ngbCollapse]="isCollapsed">
+          <div class="form-group" >
+            <label for="" class="d-block">Completed <span class="float-right">{{percentageComplete}}%</span></label>
+            <div class="progress">
+              <div class="progress-bar bg-secondary" [ngStyle]="{'width': percentageComplete + '%'}"></div>
+            </div>
+            
+          </div>
+          <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list">
+            <li class="list-group-item d-flex align-items-center" *ngFor="let section of sections; let i of index" (click)="getSectionInfo(section)" [ngClass]="{active: selectedSectionId == section.id}">
+              <p class="mr-auto py-2">{{section.title}}</p>
+              <a href="" class="ml-2">
+                <i class="icon icon-option"></i>
+              </a>
+              <a href="#" (click)="getSectionInfo(section)" class="ml-2">
+                <i class="icon icon-edit"></i>
+              </a>
+              <a href="#" class="ml-2 text-danger" (click)="deleteSection(i)">
+                <i class="icon icon-delete"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="input-group mt-3">
+            <input type="text" placeholder="Add Section" class="form-control" [(ngModel)]="inputSections">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-with-icon" (click)="addSection()"><i class="icon icon-add"></i></button>
+            </div>
           </div>
         </div>
       </div>
@@ -107,10 +112,12 @@
         <div class="widget-title section-title mt-4 mb-3">
           <h4 class="text-uppercase form-weight-bold">
             Manage Attachment(s)
-            <a href="#manageAttachmentBody" data-toggle="collapse"><i class="icon-arrow-top icon collapse"></i></a> 
+            <a href="" (click)="attchCollapse()" aria-controls="docAttachmentList" [attr.aria-expanded]="!attchCollapsed">
+              <i class="icon-arrow-top icon"></i>
+            </a>
           </h4>
         </div>     
-        <div class="widget-body" id="manageAttachmentBody">
+        <div class="widget-body" id="docAttachmentList" [ngbCollapse]="attchCollapsed">
           <div class="form-group">
             <div class="input-group">
               <input type="text" placeholder="Search attachments" class="form-control">

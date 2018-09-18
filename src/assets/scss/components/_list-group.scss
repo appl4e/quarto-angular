@@ -41,6 +41,8 @@
         margin-left: 20px;
         position: relative;
         cursor: pointer;
+        display: flex;
+        align-items: center
         a{
             color: $silver;
         }

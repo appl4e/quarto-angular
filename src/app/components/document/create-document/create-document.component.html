@@ -83,7 +83,7 @@
             </div>
             
           </div>
-          <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list">
+          <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list" [sortablejs]="sections" >
             <li class="list-group-item d-flex align-items-center" *ngFor="let section of sections; let i of index" (click)="getSectionInfo(section)" [ngClass]="{active: selectedSectionId == section.id}">
               <p class="mr-auto py-2">{{section.title}}</p>
               <a href="" class="ml-2">

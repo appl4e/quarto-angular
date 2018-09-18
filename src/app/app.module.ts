@@ -18,6 +18,7 @@ import { LayoutModule } from './layout';
 import { AuthenticationModule } from './authentication';
 import { WebsiteModule } from '@app/website';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { SortablejsModule } from 'node_modules/angular-sortablejs';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
     AuthenticationModule,
     WebsiteModule,
     FroalaEditorModule.forRoot(),
-    FroalaViewModule.forRoot()    
+    FroalaViewModule.forRoot(),
+    SortablejsModule.forRoot({ animation:150 })    
   ],
   providers: [
   ],

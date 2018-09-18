@@ -34,6 +34,8 @@ export class CreateDocument implements OnInit {
     this.sectionForm.controls.title.setValue(section.title);
     this.sectionForm.controls.description.setValue(section.description);
     this.selectedSectionId = section.id;
+
+    return false;
   }
 
   addSection() {

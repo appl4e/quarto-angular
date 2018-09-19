@@ -5,6 +5,7 @@
 .btn{
   text-transform: uppercase;
   font-size: $font-size-base;
+  height: $input-height;
 }
 
 .btn-primary{
@@ -26,6 +27,18 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active{
         border-color: $quarto-yellow;
+    }
+}
+
+.btn-rounded{
+    width: $input-height;
+    border-radius: 100%;
+    text-align: center;
+    padding: 0 0;
+    font-size: rem(20px);   
+    i:before{
+        line-height: calc(#{$input-height} - 2px);
+        vertical-align: middle;
     }
 }
 

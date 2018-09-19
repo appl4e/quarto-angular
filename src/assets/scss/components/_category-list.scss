@@ -1,0 +1,26 @@
+/* 
+// Category List
+*/
+
+ul{
+    &.category-list{
+        ul{
+            list-style-type: none;
+            padding-left: rem(10px);
+        }
+        li{
+            a{
+                padding: rem(4px) rem(8px);
+                display: block;
+                i{
+                    margin-right: 4px;
+                }
+            }
+            &.active{
+                &> a{
+                    background-color: $extraLight;
+                }
+            }
+        }
+    }
+}

@@ -30,7 +30,7 @@
               "./node_modules/@ng-select/ng-select/themes/default.theme.css",
               "./node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "./node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-              "src/assets/pe-icons/css/pe-icon-7-stroke.css",
+              "src/assets/pe-icons/pe-icon-7-stroke.css",
               "src/assets/quarto-icons/style.css",
               "./node_modules/froala-editor/css/froala_editor.pkgd.min.css",
               "./node_modules/froala-editor/css/froala_style.min.css",

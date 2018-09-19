@@ -18,3 +18,14 @@
         }
     }
 }
+.doc_actions{
+    position: absolute;
+    right: rem(15px);
+    .action-items{
+        margin-bottom: rem(8px);
+        color: $silver;
+        i{
+            font-size: rem(22px);
+        }
+    }
+}

@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { map, filter, scan, mergeMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-root',
+  selector: 'root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

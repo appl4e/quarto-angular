@@ -3,7 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-forgot-pass',
+  selector: 'forgot-pass',
   templateUrl: './forgot-pass.component.html',
   styleUrls: ['./forgot-pass.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 @Component({
-  selector: 'app-create-document',
+  selector: 'create-document',
   templateUrl: './create-document.component.html',
   styleUrls: ['./create-document.component.scss']
 })

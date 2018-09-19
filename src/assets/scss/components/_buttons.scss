@@ -5,36 +5,40 @@
 .btn{
   text-transform: uppercase;
   font-size: $font-size-base;
+  letter-spacing: 1px;
 }
 
 .btn-primary{
     color: $secondary;
     @include hover{
-        color: $secondary;
+        background: $secondary;
+        color: $primary;
+        border-color: $secondary;
     }   
 }
 
 .btn-light{
-    background-color: $white;
-    border-color: $quarto-yellow;
+    background-color: transparent;
+    border-color: $secondary;
     @include hover{
-        border-color: $quarto-yellow;
+        background-color: $secondary;
+        border-color: $secondary;
     }
     .icon{
         margin-right: 10px;
     }
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active{
-        border-color: $quarto-yellow;
+        border-color: $secondary;
     }
 }
 
 .btn-with-icon{
     .icon{
-        font-size: 1.25rem;
+        font-size: $btn-icon-font-size;
         vertical-align: middle;
         margin-top: -0.25rem;
     }
     line-height: 1.25rem;
-    padding: calc((#{$input-btn-padding-y}/1.4285) - (#{$border-width}*2)) $input-btn-padding-x;
+    padding: calc(#{$input-btn-padding-y} - ((#{$btn-icon-font-size} - #{$font-size-base})/2)) $input-btn-padding-x;
 }

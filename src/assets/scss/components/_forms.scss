@@ -2,6 +2,8 @@
 // Textual form controls
 //
 .form-control{
+    // height: auto;
+
     &::placeholder{
         color: lighten($input-color, 40%);
     }
@@ -24,4 +26,16 @@
 
 select.form-control{
     padding: calc( #{$input-padding-y} - 0.3rem) $input-padding-x;
+}
+
+.input{
+    &-group{
+        &-append{
+            .btn{
+                &-with-icon{
+                    border: 0;
+                }
+            }
+        }
+    }
 }

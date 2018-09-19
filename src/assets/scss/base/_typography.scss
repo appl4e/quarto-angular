@@ -23,16 +23,47 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: $font-family-oswald;
 }
+
+
+p{
+    font-family: $font-family-roboto;
+    line-height: $line-height-regular;
+    a{
+        font-weight: 700;
+        text-decoration: underline;
+
+        transition: all 0.3s ease-in;                @include hover;
+        -webkit-transition: all 0.3s ease-in;                @include hover;
+        -moz-transition: all 0.3s ease-in;                @include hover;
+        -ms-transition: all 0.3s ease-in;                @include hover;
+        -o-transition: all 0.3s ease-in;                @include hover;
+        
+        @include hover{
+            color: $secondary;
+            text-decoration: underline;
+        }
+    }
+}
+ul,ol{
+    font-family: $font-family-roboto;
+}
+
 a{
     &:hover{
         text-decoration: none;
     }
 }
+
 label{
     span.required{
         color: $danger;
     }
 }
+
+input, select, optgroup, textarea{
+    font-family: $font-family-roboto;
+}
+
 
 /* 
 // Text Colors

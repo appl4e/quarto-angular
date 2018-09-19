@@ -1,64 +1,133 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col text-center py-5">
-      <img src="/assets/img/quarto-ui-kit-80.jpg" alt="">
-    </div>
-  </div>
-  <div class="row px-4">
-    <div class="col">
-      <h3>Basic Elements</h3>
-    </div>
-  </div>
-  <!-- Buttons -->
-  <div class="row px-4 mt-4">
-    <div class="col">
-      <h5 class="">Buttons</h5>
-      <div>
-        <button class="btn btn-secondary mr-3" type="button">View All Videos</button>
-        <button class="btn btn-light btn-with-icon mr-3" type="button"><i class="icon pe-7s-plus"></i> Add Category</button>
-        <button class="btn btn-light mr-3" type="button">Add Category</button>
+<div class="f-wrapper">
+  <div class="f-header">
+    <div class="container">
+      <div class="row">
+        <div class="col py-5">
+          <h1 class="display-4">Quarto UI Style Guide</h1>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Input fields -->
+
+<div class="container">  
+  <!-- typo -->
   <div class="row px-4 mt-4">
-    <div class="col-12">  
-      <h5 class="">Inputs</h5>      
+    <div class="col">
+      <h2>Typography</h2>
+      <hr>
     </div>
-    <div class="col-lg-2">
+  </div>
+
+  <div class="row px-4 mt-4">
+    <!-- Headings -->
+    <div class="col-6">
+      <h4>Headings</h4>
+      <ul class="f-list f-list_typo mt-3">
+        <li><h1>H1 - 24px</h1></li>
+        <li><h2>H2 - 18px</h2></li>
+        <li><h3>H3 - 16px</h3></li>
+        <li><h4>H4 - 14px</h4></li>
+        <li><h5>H5 - 11px</h5></li>
+      </ul>
+    </div>
+    <!-- /headings -->
+
+    <!-- paragraph and list items -->
+    <div class="col-6">
+      <h4 class="mb-3">Bodytext</h4>
+      <p>For a while, I have been noticing UX design portfolio “about” descriptions and what they say about a designer. A good majority of them tell me nothing about the designer as a person that allows me to differentiate them from their work.</p>
+      <p>For a while, I have been noticing <a href="#">UX design</a>  portfolio “about” descriptions and what they say about a designer.</p>
+      
+      <ul class="f-list_ul mt-3">
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+      </ul>
+
+      <ol class="f-list_ol mt-3">
+        <li>Ordered List</li>
+        <li>Ordered List</li>
+      </ol>
+
+    </div>
+    <!-- /paragraph and list items -->
+  </div>
+
+  <!-- typo end -->
+  
+  
+  
+  <!-- Buttons -->
+  <div class="row px-4 mt-4">
+    <div class="col">
+      <h2>Buttons</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row px-4 mt-4">
+    <div class="col-8 pb-4">
+        <button class="btn btn-primary mr-3" type="button">Primary Button</button>
+      <button class="btn btn-secondary mr-3" type="button">Secondary Button</button>
+      <button class="btn btn-light btn-with-icon mr-3" type="button"><i class="icon pe-7s-plus"></i> Add Category</button>
+      <button class="btn btn-light mr-3" type="button">Add Category</button>
+
+      
+    </div>
+    <div class="col-4">
+        <div _ngcontent-c1="" class="input-group"><input _ngcontent-c1="" class="form-control" placeholder="Search attachments" type="text"><div _ngcontent-c1="" class="input-group-append"><button _ngcontent-c1="" class="btn btn-primary btn-with-icon mr-1"><i _ngcontent-c1="" class="icon icon-add"></i></button><button _ngcontent-c1="" class="btn btn-primary btn-with-icon"><i _ngcontent-c1="" class="icon icon-filter"></i></button></div></div>
+    </div>
+  </div>
+
+
+
+  <!-- Form -->
+
+  <div class="row px-4 mt-4">
+    <div class="col">
+      <h2>Form Elements</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row px-4">
+    <div class="col-lg-3">
       <div class="form-group">
         <label for="default-input">Label <span class="required">*</span></label>
         <input type="text" class="form-control" id="default-input" placeholder="Default Input">
       </div>
     </div>
-    <div class="col-lg-2">
+    
+    <div class="col-lg-3">
       <div class="form-group">
         <label for="active-input">Label <span class="required">*</span></label>
         <input type="text" class="form-control" id="active-input" autofocus placeholder="Active Input">
       </div>
     </div>
-    <div class="col-lg-2">
+    
+    <div class="col-lg-3">
       <div class="form-group">
         <label for="success-input">Label <span class="required">*</span></label>
         <input type="text" class="form-control is-valid" id="success-input" autofocus placeholder="Success Input">
       </div>
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-3">
       <div class="form-group">
         <label for="error-input">Label <span class="required">*</span></label>
         <input type="text" class="form-control is-invalid" id="error-input" autofocus placeholder="Error Input">
       </div>
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-3">
       <div class="form-group">
         <label for="disabled-input">Label <span class="required">*</span></label>
         <input type="text" class="form-control" id="disabled-input" autofocus placeholder="Disabled Input" disabled>
       </div>
     </div>
   </div>
-  <div class="row px-4 mt-1">
-    <div class="col-lg-3">
+
+  <div class="row px-4 mt-4">
+    <div class="col-lg-4">
       <div class="input-group">
         <input type="text" placeholder="Search attachments" class="form-control">
         <div class="input-group-append">
@@ -66,9 +135,8 @@
           <button class="btn btn-primary btn-with-icon"><i class="icon icon-filter"></i></button>
         </div>
       </div>
-      
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <div class="input-group">
         <input type="text" placeholder="Search attachments" class="form-control">
         <div class="input-group-append">
@@ -80,7 +148,7 @@
 
   <div class="row px-4 mt-4">
     <!-- Checkboxes -->
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <h5 class="mb-3">Checkboxes</h5>
       <div class="form-check mb-3">
         <input type="checkbox" class="form-check-input" id="check1">
@@ -112,7 +180,7 @@
       </div>
     </div>
     <!-- Radio buttons -->
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <h5 class="mb-3">Radio Buttons</h5>
       <div class="form-check mb-3">
         <input type="radio" id="radio1" name="radios" class="form-check-input">
@@ -145,7 +213,7 @@
     </div>
 
     <!-- Select Dropdown -->
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <h5 class="mb-3">
         Dropdown
       </h5>
@@ -160,140 +228,6 @@
     </div>
   </div>
 
-  <div class="row px-4 mt-4">
-    <div class="col">
-      <h3>Typography: Oswald</h3>
-    </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading One</p>
-        <p class="mb-0">22px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h1 class="">Section Title</h1>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading Two</p>
-        <p class="mb-0">20px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h2 class="">Document Title</h2>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading Two Light</p>
-        <p class="mb-0">20px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h2 class="font-weight-light">Document Title on card</h2>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading Three</p>
-        <p class="mb-0">18px/Regular</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h2 class="font-weight-normal">Video title</h2>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading Four</p>
-        <p class="mb-0">15px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h4 class="">Category block title</h4>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-1">Heading Five</p>
-        <p class="mb-0">14px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h5 class="text-uppercase">Analyics Number 500</h5>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">20px/Light</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <h2 class="font-weight-light text-uppercase">Document title on card</h2>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-    <div class="col-md-3 align-self-center">
-      <p class="mb-0">20px/Bold</p>
-    </div>
-    <div class="col-md-4 align-self-center">
-      <h2 class="font-weight-bold">Document title on view mode</h2>
-    </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">13px/Light</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-light post-meta text-black-50">Video Views - Video Years</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">13px/Light</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-light post-meta">Master category name</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">12px/Light</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-light text-uppercase post-meta-md">Analyics Numbers Label</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">12px/Light</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-light post-meta-md">Sub Category Name</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">11px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-light post-meta-md text-black-50">Footer Copyright</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3 align-self-center">
-        <p class="mb-0">11px/Medium</p>
-      </div>
-      <div class="col-md-4 align-self-center">
-        <p class="font-weight-medium post-meta-md">Author Name</p>
-      </div>
-  </div>
-  <div class="row px-4 mt-3">
-      <div class="col-md-3">
-        <p class="mb-2">14px/Regular</p>
-        <p class="mb-0">Line-height: 21px</p>
-      </div>
-      <div class="col-md-4">
-        <p class="">Body Text....</p>
-        <p class="">Notice these descriptions are laden with buzz words that don’t give me a sense of the designer beyond the fact that
-        they are a designer. Instead, they are explicity telling me they are a designer when it is</p>
-      </div>
-  </div>
-  
-
 </div>
+
+<div class="mt-5"></div>

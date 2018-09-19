@@ -20,8 +20,3 @@
     @return map-get($z-layers, $layer);
 }
 
-// Function for px to rem converter
-@function rem($n){
-    $remSize: $n / 16px;
-    @return #{$remSize}rem;
-}

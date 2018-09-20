@@ -6,37 +6,47 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./create-document.component.scss']
 })
 export class CreateDocument implements OnInit {
+  
+  // Defining variables for section list actions
+  public isCollapsed:boolean = false;
+  public attchCollapsed:boolean = false;
+  inputSections:string = null;
+  addSectionArray:{} = null;
+  selectedSectionId:number = null;
+  percentageComplete:number = 0;
+  allIds = [];
 
-  public isCollapsed = false;
-  public attchCollapsed = false;
+  // Defining sections array
+  sections:any[] = [
+    { title: 'Introduction', description: '', id: 1, completed: false },
+    { title: 'How to start', description: 'Description of How to start', id: 2, completed: false },
+    { title: 'Topic Body', description: 'Description of Topic Body', id: 3, completed: false },
+    { title: 'Conclusion', description: 'Description of Conclusion', id: 4, completed: false }
+  ];
+  
+  constructor(private fb: FormBuilder) { }
 
-  collapse(){
-    
+  ngOnInit() {
+  }
+  
+  // Froala Wysiwyg editor initialization options
+  public options: Object = {
+    charCounterCout: true,
+    heightMin: 500,
+    pluginsEnabled: ['image', 'video', 'table', 'list']
+  }
+  collapse() {
+
     this.isCollapsed = !this.isCollapsed;
 
     return false;
   }
 
-  attchCollapse(){
+  attchCollapse() {
     this.attchCollapsed = !this.attchCollapsed;
 
     return false;
   }
-  // Defining sections array
-  sections = [
-    { title: 'Introduction', description: '', id: 1, completed: false},
-    { title: 'How to start', description: 'Description of How to start', id: 2, completed: false},
-    { title: 'Topic Body', description: 'Description of Topic Body', id: 3, completed: false},
-    { title: 'Conclusion', description: 'Description of Conclusion', id: 4, completed: false}
-  ];
-  // Defining variables for section list actions
-  inputSections = null;
-  addSectionArray = null;
-  selectedSectionId = null;
-  sectionCompleted = null;
-  percentageComplete = 0;
-  allIds = [];
-
   // Section edit form
   sectionForm = this.fb.group({
     title: ['', Validators.required],
@@ -45,10 +55,8 @@ export class CreateDocument implements OnInit {
     completed: ''
   });
 
-  constructor(private fb: FormBuilder) { }
-
   // Getting section info on click on section list item
-  getSectionInfo(section){
+  getSectionInfo(section) {
     this.sectionForm.controls.title.setValue(section.title);
     this.sectionForm.controls.description.setValue(section.description);
     this.selectedSectionId = section.id;
@@ -62,8 +70,7 @@ export class CreateDocument implements OnInit {
     this.sections.filter(obj => {
       newId = Math.max(this.allIds.push(obj.id));
     });
-    
-    newId = newId +1;
+    newId = newId + 1;
 
     this.addSectionArray = { title: this.inputSections, description: '', id: newId, completed: false };
 
@@ -75,19 +82,19 @@ export class CreateDocument implements OnInit {
   }
   // On click submit of section form
   sectionSubmit() {
-    var x = this.selectedSectionId;   
-    var index = this.sections.findIndex(y=> y.id==x);
+    var x = this.selectedSectionId;
+    var index = this.sections.findIndex(y => y.id == x);
     this.sectionForm.controls.id.setValue(x);
-    this.sectionForm.controls.completed.setValue(true);    
-    
+    this.sectionForm.controls.completed.setValue(true);
+
 
     this.sections[index] = this.sectionForm.value;
 
     this.percentCalculate();
-    
+
   }
   // Calculating the percent completion of section
-  percentCalculate(){
+  percentCalculate() {
     var total = this.sections.length;
     var complete = this.sections.filter(obj => {
       return obj.completed == true;
@@ -97,21 +104,11 @@ export class CreateDocument implements OnInit {
     this.percentageComplete = Math.round((comp / total) * 100);
   }
   // Delete section from section list
-  deleteSection(i){
+  deleteSection(i) {
     this.sections = this.sections.filter(obj => obj != i);
-    
+
     return false;
   }
 
-  // Froala Wysiwyg editor initialization options
-  public options: Object ={
-    charCounterCout: true,
-    heightMin:  500,
-    pluginsEnabled: ['image', 'video', 'table', 'list']
-  }
-
-
-  ngOnInit() {
-  }
-
+  
 }

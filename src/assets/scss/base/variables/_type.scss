@@ -8,18 +8,22 @@ Typography Variables
    font-size: 16px;
 }
 
-$font-family-oswald : Oswald, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base   : $font-family-oswald;
-$font-size-base     : 0.875rem !default;
+$font-family-oswald     : Oswald, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base       : $font-family-oswald;
+$font-size-base         : 0.875rem !default;
 
-$font-family-roboto : Roboto, Sans;
-$line-height-regular: 1.5;
+$font-family-roboto     : Roboto, Sans;
+$line-height-regular    : 1.5;
 
-$h1-font-size       : $font-size-base * 1.714;
-$h2-font-size       : $font-size-base * 1.285;
-$h3-font-size       : $font-size-base * 1.142;
-$h4-font-size       : $font-size-base;
-$h5-font-size       : $font-size-base * 0.785;
+$h1-font-size           : $font-size-base * 1.714; //24px
+$h2-font-size           : $font-size-base * 1.285; //18px
+$h3-font-size           : $font-size-base * 1.142; //16px
+$h4-font-size           : $font-size-base; //14px
+$h5-font-size           : $font-size-base * 0.785; //11px
 
-$display3-size      :  3rem;
-$display4-size      :  1.875rem;
+$letter-spacing-regular : 1px;
+
+$input-font-size        : $h5-font-size;
+
+$display3-size          : 3rem;
+$display4-size          : 1.875rem;

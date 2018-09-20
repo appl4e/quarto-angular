@@ -19,13 +19,20 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6{
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4{
     font-family: $font-family-oswald;
+    letter-spacing: $letter-spacing-regular;
+}
+
+h5,.h5{
+    font-family: $font-family-roboto;
+    color: $meta-color;
+    font-weight: 400;
 }
 
 
-p{
+p, span{
     font-family: $font-family-roboto;
     line-height: $line-height-regular;
     a{
@@ -64,7 +71,6 @@ input, select, optgroup, textarea{
     font-family: $font-family-roboto;
 }
 
-
 /* 
 // Text Colors
 */
@@ -84,8 +90,13 @@ input, select, optgroup, textarea{
     font-weight: $headings-font-weight;
 }
 
+
+
+
 .post-meta{
-    font-size: $font-size-base * 0.8125;
+    color: $meta-color;
+    font-size: $h5-font-size; //11px
+    font-weight: 400;
 }
 
 .post-meta-md{

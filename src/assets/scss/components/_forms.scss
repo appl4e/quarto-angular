@@ -3,6 +3,7 @@
 //
 .form-control{
     // height: auto;
+    // font-size: $input-font-size;
 
     &::placeholder{
         color: lighten($input-color, 40%);

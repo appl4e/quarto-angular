@@ -7,7 +7,7 @@ import { ViewDocument } from '@app/components/document/view-document/view-docume
 
 
 export const ComponentRoutes: Routes = [
-  {path: '', component: HomeComponent, data: {title: 'Home'}},
+  { path: '', component: HomeComponent, data: {title: 'Home'}},
   { path: 'create-document', component: CreateDocument, data: {title: 'Create Document'}},
   { path: 'edit-document', component: EditDocument, data: {title: 'Edit Document'}},
   { path: 'view-document', component: ViewDocument, data: {title: 'Edit Document'}},

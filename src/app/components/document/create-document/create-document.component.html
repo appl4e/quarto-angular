@@ -88,7 +88,7 @@
           </div>
           <ul class="list-group list-group-flush list-group-icons d-flex justify-content-end section-list" [sortablejs]="sections" [sortablejsOptions]="{ handle: '.handle' }" >
             <li class="list-group-item" *ngFor="let section of sections; let i of index" (click)="getSectionInfo(section)" [ngClass]="{active: selectedSectionId == section.id}">
-              <p class="mr-auto py-2">{{section.title}}</p>
+              <h4 class="mr-auto py-2">{{section.title}}</h4>
               <a href="" class="ml-2 handle">
                 <i class="icon icon-option"></i>
               </a>
